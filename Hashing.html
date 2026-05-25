@@ -7511,92 +7511,50 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
     <!-- ================= PENJELASAN HASHING ================= -->
-<section style="margin-top:40px;">
+<section>
 
-  <div style="
-      background:white;
-      padding:35px;
-      border-radius:18px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.08);
-  ">
+  <div>
 
-    <h1 style="
-        color:#2563eb;
-        margin-bottom:20px;
-        font-size:38px;
-    ">
+    <h1>
       Hashing pada Struktur Data
     </h1>
 
-    <p style="
-        font-size:18px;
-        line-height:1.8;
-        color:#444;
-        margin-bottom:20px;
-    ">
+    <p>
       Hashing adalah teknik dalam struktur data yang digunakan untuk
       menyimpan dan mencari data dengan sangat cepat menggunakan
       sebuah fungsi yang disebut <b>hash function</b>.
     </p>
 
-    <p style="
-        font-size:18px;
-        line-height:1.8;
-        color:#444;
-        margin-bottom:20px;
-    ">
+    <p>
       Pada hashing, data akan diubah menjadi sebuah indeks atau alamat
       tertentu di dalam tabel yang disebut <b>Hash Table</b>.
       Dengan metode ini, proses pencarian data dapat dilakukan
       lebih cepat dibandingkan pencarian biasa.
     </p>
 
-    <div style="
-        background:#eff6ff;
-        border-left:6px solid #2563eb;
-        padding:20px;
-        border-radius:10px;
-        margin-top:20px;
-    ">
-      <h3 style="margin-bottom:10px; color:#1d4ed8;">
+    <div>
+      <h3>
         Contoh Sederhana
       </h3>
 
-      <p style="line-height:1.8; color:#333;">
+      <p>
         Jika ukuran tabel = 10 dan data = 27,
         maka fungsi hash yang digunakan:
       </p>
 
-      <div style="
-          background:white;
-          padding:15px;
-          margin-top:10px;
-          border-radius:8px;
-          font-size:20px;
-          font-weight:bold;
-          text-align:center;
-          color:#2563eb;
-      ">
+      <div>
         h(k) = k mod 10
       </div>
 
-      <p style="margin-top:15px; line-height:1.8; color:#333;">
+      <p>
         Maka:
       </p>
 
-      <div style="
-          background:white;
-          padding:15px;
-          border-radius:8px;
-          text-align:center;
-          font-size:22px;
-          font-weight:bold;
-          color:#111827;
-      ">
-        h(27) = 27 mod 10 = 7
+      <div>
+        <p>h(27) = 27 mod 10 = 7</p>
       </div>
 
-      <p style="margin-top:15px; line-height:1.8; color:#333;">
+      <p>
         Artinya data 27 akan disimpan pada indeks ke-7.
       </p>
     </div>
@@ -7605,66 +7563,38 @@ a.anchor-link {
 </section>
 
 <!-- ================= LANGKAH LANGKAH HASHING ================= -->
-<section style="margin-top:40px;">
+<section>
 
-  <div style="
-      background:white;
-      padding:35px;
-      border-radius:18px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.08);
-  ">
+  <div>
 
-    <h2 style="
-        color:#111827;
-        margin-bottom:25px;
-        font-size:34px;
-    ">
+    <h2>
       Langkah - Langkah Hashing
     </h2>
 
     <!-- STEP 1 -->
-    <div style="
-        margin-bottom:25px;
-        padding:20px;
-        background:#f9fafb;
-        border-radius:12px;
-    ">
-      <h3 style="color:#2563eb; margin-bottom:10px;">
+    <div>
+      <h3>
         1. Menentukan Ukuran Hash Table
       </h3>
 
-      <p style="line-height:1.8; color:#444;">
+      <p>
         Pertama, tentukan jumlah slot atau ukuran tabel hashing.
         Misalnya ukuran tabel adalah 10.
       </p>
     </div>
 
     <!-- STEP 2 -->
-    <div style="
-        margin-bottom:25px;
-        padding:20px;
-        background:#f9fafb;
-        border-radius:12px;
-    ">
-      <h3 style="color:#2563eb; margin-bottom:10px;">
+    <div>
+      <h3>
         2. Membuat Fungsi Hash
       </h3>
 
-      <p style="line-height:1.8; color:#444;">
+      <p>
         Fungsi hash digunakan untuk menentukan posisi penyimpanan data.
       </p>
 
-      <div style="
-          background:white;
-          padding:15px;
-          border-radius:10px;
-          margin-top:10px;
-          text-align:center;
-          font-size:22px;
-          font-weight:bold;
-          color:#1d4ed8;
-      ">
-        h(k) = k mod ukuran_tabel
+      <div>
+        <p>h(k) = k mod ukuran_tabel</p>
       </div>
     </div>
 
@@ -7720,51 +7650,30 @@ a.anchor-link {
     </div>
 
     <!-- STEP 4 -->
-    <div style="
-        margin-bottom:25px;
-        padding:20px;
-        background:#f9fafb;
-        border-radius:12px;
-    ">
-      <h3 style="color:#2563eb; margin-bottom:10px;">
+    <div>
+      <h3>
         4. Menangani Collision
       </h3>
 
-      <p style="line-height:1.8; color:#444;">
+      <p>
         Collision terjadi jika dua data memiliki indeks yang sama.
       </p>
 
-      <p style="line-height:1.8; color:#444;">
+      <p>
         Contoh:
       </p>
 
-      <div style="
-          background:white;
-          padding:15px;
-          border-radius:10px;
-          margin-top:10px;
-          line-height:2;
-          color:#111827;
-      ">
+      <div>
         15 mod 10 = 5 <br>
         25 mod 10 = 5
       </div>
 
-      <p style="
-          margin-top:15px;
-          line-height:1.8;
-          color:#444;
-      ">
+      <p>
         Kedua data masuk ke indeks yang sama, sehingga perlu
         metode penanganan collision seperti:
       </p>
 
-      <ul style="
-          margin-top:10px;
-          padding-left:25px;
-          line-height:2;
-          color:#444;
-      ">
+      <ul>
         <li>Chaining</li>
         <li>Linear Probing</li>
         <li>Quadratic Probing</li>
@@ -7772,16 +7681,12 @@ a.anchor-link {
     </div>
 
     <!-- STEP 5 -->
-    <div style="
-        padding:20px;
-        background:#f9fafb;
-        border-radius:12px;
-    ">
-      <h3 style="color:#2563eb; margin-bottom:10px;">
+    <div >
+      <h3>
         5. Proses Pencarian Data
       </h3>
 
-      <p style="line-height:1.8; color:#444;">
+      <p>
         Untuk mencari data, gunakan fungsi hash yang sama.
         Sistem akan langsung menuju indeks tertentu sehingga
         pencarian menjadi lebih cepat.
