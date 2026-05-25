@@ -7510,6 +7510,320 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+    <!-- ================= PENJELASAN HASHING ================= -->
+<section style="margin-top:40px;">
+
+  <div style="
+      background:white;
+      padding:35px;
+      border-radius:18px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  ">
+
+    <h1 style="
+        color:#2563eb;
+        margin-bottom:20px;
+        font-size:38px;
+    ">
+      Hashing pada Struktur Data
+    </h1>
+
+    <p style="
+        font-size:18px;
+        line-height:1.8;
+        color:#444;
+        margin-bottom:20px;
+    ">
+      Hashing adalah teknik dalam struktur data yang digunakan untuk
+      menyimpan dan mencari data dengan sangat cepat menggunakan
+      sebuah fungsi yang disebut <b>hash function</b>.
+    </p>
+
+    <p style="
+        font-size:18px;
+        line-height:1.8;
+        color:#444;
+        margin-bottom:20px;
+    ">
+      Pada hashing, data akan diubah menjadi sebuah indeks atau alamat
+      tertentu di dalam tabel yang disebut <b>Hash Table</b>.
+      Dengan metode ini, proses pencarian data dapat dilakukan
+      lebih cepat dibandingkan pencarian biasa.
+    </p>
+
+    <div style="
+        background:#eff6ff;
+        border-left:6px solid #2563eb;
+        padding:20px;
+        border-radius:10px;
+        margin-top:20px;
+    ">
+      <h3 style="margin-bottom:10px; color:#1d4ed8;">
+        Contoh Sederhana
+      </h3>
+
+      <p style="line-height:1.8; color:#333;">
+        Jika ukuran tabel = 10 dan data = 27,
+        maka fungsi hash yang digunakan:
+      </p>
+
+      <div style="
+          background:white;
+          padding:15px;
+          margin-top:10px;
+          border-radius:8px;
+          font-size:20px;
+          font-weight:bold;
+          text-align:center;
+          color:#2563eb;
+      ">
+        h(k) = k mod 10
+      </div>
+
+      <p style="margin-top:15px; line-height:1.8; color:#333;">
+        Maka:
+      </p>
+
+      <div style="
+          background:white;
+          padding:15px;
+          border-radius:8px;
+          text-align:center;
+          font-size:22px;
+          font-weight:bold;
+          color:#111827;
+      ">
+        h(27) = 27 mod 10 = 7
+      </div>
+
+      <p style="margin-top:15px; line-height:1.8; color:#333;">
+        Artinya data 27 akan disimpan pada indeks ke-7.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= LANGKAH LANGKAH HASHING ================= -->
+<section style="margin-top:40px;">
+
+  <div style="
+      background:white;
+      padding:35px;
+      border-radius:18px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  ">
+
+    <h2 style="
+        color:#111827;
+        margin-bottom:25px;
+        font-size:34px;
+    ">
+      Langkah - Langkah Hashing
+    </h2>
+
+    <!-- STEP 1 -->
+    <div style="
+        margin-bottom:25px;
+        padding:20px;
+        background:#f9fafb;
+        border-radius:12px;
+    ">
+      <h3 style="color:#2563eb; margin-bottom:10px;">
+        1. Menentukan Ukuran Hash Table
+      </h3>
+
+      <p style="line-height:1.8; color:#444;">
+        Pertama, tentukan jumlah slot atau ukuran tabel hashing.
+        Misalnya ukuran tabel adalah 10.
+      </p>
+    </div>
+
+    <!-- STEP 2 -->
+    <div style="
+        margin-bottom:25px;
+        padding:20px;
+        background:#f9fafb;
+        border-radius:12px;
+    ">
+      <h3 style="color:#2563eb; margin-bottom:10px;">
+        2. Membuat Fungsi Hash
+      </h3>
+
+      <p style="line-height:1.8; color:#444;">
+        Fungsi hash digunakan untuk menentukan posisi penyimpanan data.
+      </p>
+
+      <div style="
+          background:white;
+          padding:15px;
+          border-radius:10px;
+          margin-top:10px;
+          text-align:center;
+          font-size:22px;
+          font-weight:bold;
+          color:#1d4ed8;
+      ">
+        h(k) = k mod ukuran_tabel
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div style="
+        margin-bottom:25px;
+        padding:20px;
+        background:#f9fafb;
+        border-radius:12px;
+    ">
+      <h3 style="color:#2563eb; margin-bottom:10px;">
+        3. Memasukkan Data ke Hash Table
+      </h3>
+
+      <p style="line-height:1.8; color:#444;">
+        Data dimasukkan berdasarkan hasil dari fungsi hash.
+      </p>
+
+      <div style="
+          overflow-x:auto;
+          margin-top:15px;
+      ">
+        <table style="
+            width:100%;
+            border-collapse:collapse;
+            text-align:center;
+        ">
+          <tr style="background:#2563eb; color:white;">
+            <th style="padding:12px;">Data</th>
+            <th style="padding:12px;">Perhitungan</th>
+            <th style="padding:12px;">Indeks</th>
+          </tr>
+
+          <tr style="background:#f9fafb;">
+            <td style="padding:12px;">15</td>
+            <td style="padding:12px;">15 mod 10</td>
+            <td style="padding:12px;">5</td>
+          </tr>
+
+          <tr>
+            <td style="padding:12px;">22</td>
+            <td style="padding:12px;">22 mod 10</td>
+            <td style="padding:12px;">2</td>
+          </tr>
+
+          <tr style="background:#f9fafb;">
+            <td style="padding:12px;">37</td>
+            <td style="padding:12px;">37 mod 10</td>
+            <td style="padding:12px;">7</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div style="
+        margin-bottom:25px;
+        padding:20px;
+        background:#f9fafb;
+        border-radius:12px;
+    ">
+      <h3 style="color:#2563eb; margin-bottom:10px;">
+        4. Menangani Collision
+      </h3>
+
+      <p style="line-height:1.8; color:#444;">
+        Collision terjadi jika dua data memiliki indeks yang sama.
+      </p>
+
+      <p style="line-height:1.8; color:#444;">
+        Contoh:
+      </p>
+
+      <div style="
+          background:white;
+          padding:15px;
+          border-radius:10px;
+          margin-top:10px;
+          line-height:2;
+          color:#111827;
+      ">
+        15 mod 10 = 5 <br>
+        25 mod 10 = 5
+      </div>
+
+      <p style="
+          margin-top:15px;
+          line-height:1.8;
+          color:#444;
+      ">
+        Kedua data masuk ke indeks yang sama, sehingga perlu
+        metode penanganan collision seperti:
+      </p>
+
+      <ul style="
+          margin-top:10px;
+          padding-left:25px;
+          line-height:2;
+          color:#444;
+      ">
+        <li>Chaining</li>
+        <li>Linear Probing</li>
+        <li>Quadratic Probing</li>
+      </ul>
+    </div>
+
+    <!-- STEP 5 -->
+    <div style="
+        padding:20px;
+        background:#f9fafb;
+        border-radius:12px;
+    ">
+      <h3 style="color:#2563eb; margin-bottom:10px;">
+        5. Proses Pencarian Data
+      </h3>
+
+      <p style="line-height:1.8; color:#444;">
+        Untuk mencari data, gunakan fungsi hash yang sama.
+        Sistem akan langsung menuju indeks tertentu sehingga
+        pencarian menjadi lebih cepat.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= KELEBIHAN ================= -->
+<section style="margin-top:40px; margin-bottom:40px;">
+
+  <div style="
+      background:white;
+      padding:35px;
+      border-radius:18px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  ">
+
+    <h2 style="
+        color:#111827;
+        margin-bottom:20px;
+        font-size:32px;
+    ">
+      Kelebihan Hashing
+    </h2>
+
+    <ul style="
+        padding-left:25px;
+        line-height:2.2;
+        color:#444;
+        font-size:18px;
+    ">
+      <li>Pencarian data sangat cepat</li>
+      <li>Efisien untuk data dalam jumlah besar</li>
+      <li>Mengurangi waktu pencarian</li>
+      <li>Banyak digunakan pada database dan sistem login</li>
+    </ul>
+
+  </div>
+
+</section>
 <main><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=be3a029d-fab0-4ae4-a729-bfa392e48cce">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
